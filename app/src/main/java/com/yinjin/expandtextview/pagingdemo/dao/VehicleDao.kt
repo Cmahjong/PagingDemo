@@ -14,7 +14,7 @@ import com.yinjin.expandtextview.pagingdemo.bean.Vehicle
 @Dao
 interface VehicleDao {
     @Insert
-    fun insertVehicle(vehicles: Vehicle)
+    fun insertVehicle(vehicles: ArrayList<Vehicle>)
 
     @Delete
     fun delete(vehicle: Vehicle)

@@ -25,12 +25,8 @@ class Main3Activity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main3)
         async {
-            userDao.insertUsers((User(1, "姓名1")))
-            userDao.insertUsers((User(2, "姓名2")))
-            userDao.insertUsers((User(3, "姓名3")))
-            vehicle.insertVehicle(Vehicle(1, 1, "车辆1"))
-            vehicle.insertVehicle(Vehicle(2, 1, "车辆2"))
-            vehicle.insertVehicle(Vehicle(3, 1, "车辆3"))
+            userDao.insertUsers(arrayListOf(User(1, "姓名1"),(User(2, "姓名2")),(User(3, "姓名3"))))
+            vehicle.insertVehicle(arrayListOf(Vehicle(1, 1, "车辆1"),Vehicle(2, 1, "车辆2"),Vehicle(3, 1, "车辆3")))
         }
 
         button2.onClick {

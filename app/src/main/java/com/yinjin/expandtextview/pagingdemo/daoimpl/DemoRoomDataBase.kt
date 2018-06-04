@@ -23,7 +23,7 @@ abstract class DemoRoomDataBase : RoomDatabase() {
         var INSTANCE: DemoRoomDataBase? = null
         fun getInstance(context: Context): DemoRoomDataBase {
             if (INSTANCE == null) {
-                INSTANCE = Room.databaseBuilder(context, DemoRoomDataBase::class.java, "demo_20180531").build()
+                INSTANCE = Room.databaseBuilder(context, DemoRoomDataBase::class.java, "demo_20180531").allowMainThreadQueries().build()
             }
             return INSTANCE!!
         }

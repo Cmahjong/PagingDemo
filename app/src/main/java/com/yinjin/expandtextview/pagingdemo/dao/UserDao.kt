@@ -14,7 +14,7 @@ import com.yinjin.expandtextview.pagingdemo.bean.User
 @Dao
 interface UserDao {
     @Insert
-    fun insertUsers(users: User)
+    fun insertUsers(users: ArrayList<User>)
 
     @Delete
     fun delete(user: User)
